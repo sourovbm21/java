@@ -56,7 +56,7 @@ public class HashTable {
 //printing using entry set 	
 Set s=st.entrySet();
 		
-	System.out.println(s);
+	System.out.println("using entryset : "+s);
 
 //check both hashtable are equal or not 
 	
