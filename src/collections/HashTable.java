@@ -13,6 +13,7 @@ public class HashTable {
 		//key -->object-->Hashcode -->value
 		//conains only unique value
 		//no null key and null value are not allowed
+		//key 
 		
 		
 		

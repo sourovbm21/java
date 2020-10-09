@@ -18,7 +18,7 @@ public class HashMapConcept {
 		//map.entry and entry set
     //HashMap is not synchronised --not tread safe
 	//concurrent modification exception fail fast condition
-		//
+		//Entry is a sub interface of Map
 		
 		
 		HashMap<Integer,String > hm =new HashMap<Integer,String >();

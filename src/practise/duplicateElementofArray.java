@@ -2,14 +2,17 @@ package practise;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class duplicateElementofArray {
 
 	public static void main(String[] args) {
 		
 		
-   String names[]= {"java","javaScript","C","ruby","java","C"};;
-//   
+   String names[]= {"java","javaScript","C","ruby","java","java"};;
+   
 //   for (int i=0;i<names.length;i++) {
 //	    for (int j=i+1;i<names.length;j++) {
 //	    	
@@ -20,21 +23,45 @@ public class duplicateElementofArray {
 // 	   
 //   }
    
-   //using set 
-   //time complexity is O(n)
-   HashSet<String> store=new HashSet<String>();
-   for(String name:names) {
-	    
-	   if (store.add(name)==false) {
-		   System.out.println("duplicate is using HashSet : "+name);
-	   }
+
+   
+   ////using Hashset(time complexity is O(n)
+   HashSet<String > store=new HashSet<String>();
+   for (String name:names) {
+	   
+	  if( store.add(name)==false) {
+		  System.out.println("dupliii : "+name);
+	  }
 	   
    }
+	//USing hashmap
+   System.out.println("******printing using HashMap*****");
    
-   ////using HashMap
-   HashMap <String ,Integer > storeMap=new HashMap<String ,Integer>();
-		
-		
+   Map<String ,Integer>hm=new HashMap<String ,Integer>();
+   
+   for (String name:names) {
+	   Integer count =hm.get(name);
+	   if(count==null) {
+		   hm.put(name,1);
+	   }else {
+		   hm.put(name,count++);
+	   }
+   }
+   
+   
+   Set<Entry<String ,Integer>> entryset=(Set<Entry<String, Integer>>)hm.entrySet();
+   
+   for (Entry entry:entryset)//Entry<String, Integer> entry:hm.entrySet()
+   {
+//	   
+//        if(entry.getValue()>1) {
+//        	
+//        }
+
+   }
+   
+   
+   
 	}
 
 }

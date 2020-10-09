@@ -22,8 +22,7 @@ public class HashSetinfo {
 		HashSet<String > h =new HashSet<String>();
 	//	HashSet hs=new HashSet(int 100);//
 	//	HashSet hs=new HashSet(int 100,flot );
-		
-		
+
 		
 	}
 

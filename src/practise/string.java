@@ -10,7 +10,22 @@ public class string {
 		totalNumberCharacterString();
 		countingVowelConsonant ();
 		stringAnagram();
+		reversetheString("Selenium");
 
+	}
+
+	private static void reversetheString(String s) {
+		       
+		
+		String sum=" ";
+		for (int i=s.length()-1;i>=0;i--) {
+			sum=sum+s.charAt(i);
+		
+		
+		}
+		System.out.println("reverse is : "+sum);
+		
+		
 	}
 
 	private static void stringAnagram() {
