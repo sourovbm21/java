@@ -15,7 +15,7 @@ public class StringManupulation {
     //string compartion 
     String s="sourov";
     String s1="souroV";
-    System.out.println(s.equals(s1));
+    System.out.println("using equals methhods: " +s.equals(s1));
     System.out.println(s.equalsIgnoreCase(s1));
     //String substring 
     System.out.println(s.substring(1));
